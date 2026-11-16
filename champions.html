@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>角色圖鑑 — 聯盟戰棋（TFT）陣容與營運百科</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/champions.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="header-title-row">
+        <h1 class="site-title">聯盟戰棋（TFT）陣容與營運百科</h1>
+        <span class="version-badge">Set 18 Meta</span>
+      </div>
+      <p class="site-subtitle">第 18 賽季《Enchanted Wilds》全英雄角色圖鑑：含費用、羈絆、魔力條、三星數值成長與推薦出裝。</p>
+      <nav class="site-nav" aria-label="主導覽">
+        <a class="nav-link" href="index.html">陣容總覽</a>
+        <a class="nav-link active" href="champions.html">角色圖鑑</a>
+        <a class="nav-link" href="traits.html">羈絆圖鑑</a>
+        <a class="nav-link" href="items.html">裝備圖鑑</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="filter-bar" aria-label="英雄篩選器">
+      <div class="filter-group" role="group" aria-label="費用篩選">
+        <span class="filter-label">英雄費用</span>
+        <button type="button" class="filter-btn active" data-filter-type="cost" data-filter-value="all">全部</button>
+        <button type="button" class="filter-btn" data-filter-type="cost" data-filter-value="5">5 費</button>
+        <button type="button" class="filter-btn" data-filter-type="cost" data-filter-value="4">4 費</button>
+        <button type="button" class="filter-btn" data-filter-type="cost" data-filter-value="3">3 費</button>
+        <button type="button" class="filter-btn" data-filter-type="cost" data-filter-value="2">2 費</button>
+        <button type="button" class="filter-btn" data-filter-type="cost" data-filter-value="1">1 費</button>
+      </div>
+      <div class="filter-group">
+        <label class="filter-label" for="champ-search">關鍵字搜尋</label>
+        <input id="champ-search" class="search-input" type="search" placeholder="輸入英雄名稱、羈絆或技能關鍵字（例如：亞盧妮、暈眩、護盾、術士）">
+      </div>
+    </nav>
+
+    <p id="champ-count" class="champ-count"></p>
+
+    <main class="encyclopedia-grid">
+      <!-- ===== 5 費英雄 ===== -->
+      <article class="champ-card cost-border-5" data-cost="5">
+        <div class="champ-header">
+          <h2 class="champ-name">亞盧妮</h2>
+          <span class="cost-pill c5">5 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">調節</span><span class="tag">月華之光</span><span class="tag">術士</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">月隕</span>
+            <span class="skill-mana">主動 0/35</span>
+          </div>
+          <p class="skill-desc">降下 9 塊月華碎片，每塊造成 50 / 75 / 500 魔法傷害，由 3 名最靠近的敵軍分攤；處於滿月狀態時改為月亮墜落盤面，全體敵軍分攤 2350 / 3600 / 7500 魔法傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>法系主 C ｜ 精進之矛、寶石手套、打手連枷</div>
+      </article>
+
+      <article class="champ-card cost-border-5" data-cost="5">
+        <div class="champ-header">
+          <h2 class="champ-name">達瑞文</h2>
+          <span class="cost-pill c5">5 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">賞金獵手</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">迴轉死神</span>
+            <span class="skill-mana">主動 0/120</span>
+          </div>
+          <p class="skill-desc">被動：普攻隨機敵軍並造成 12 秒流血 140 / 210 / 3000 物傷（12% 機率觸發額外傷害與 2 層流血）。主動：朝流血層數最多敵軍擲出雙斧造成 100 / 150 / 400 物傷並引爆剩餘流血。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>物理主 C ｜ 鬼索的狂暴之刃、無盡之刃、最後耳語</div>
+      </article>
+
+      <article class="champ-card cost-border-5" data-cost="5">
+        <div class="champ-header">
+          <h2 class="champ-name">遠古巨龍</h2>
+          <span class="cost-pill c5">5 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">頂尖掠食者</span><span class="tag">峽谷巨獸</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">無與倫比的熱力</span>
+            <span class="skill-mana">主動 20/60</span>
+          </div>
+          <p class="skill-desc">占用 2 人口且峽谷巨獸 +2。被動：普攻濺射鄰近敵軍 75% / 100% 傷害。主動：飛空無敵，落地暈眩全體敵軍 1.25 秒並點燃，隨後噴射龍之吐息造成 285 / 430 / 7200 物傷；增益可處決低於 12% 生命敵軍。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>雙格終極主 C ｜ 無盡之刃、最後耳語、夜色緣界</div>
+      </article>
+
+      <article class="champ-card cost-border-5" data-cost="5">
+        <div class="champ-header">
+          <h2 class="champ-name">拉克絲</h2>
+          <span class="cost-pill c5">5 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">聖靈使</span><span class="tag">全起源可選</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">終極閃光</span>
+            <span class="skill-mana">主動 20/70</span>
+          </div>
+          <p class="skill-desc">所選起源算作兩次特性加成。被動：施放技能時，所有同特性友軍獲得 3 魔力。主動：朝敵軍最密集處發射光束，造成 330 / 520 / 5000 魔法傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>法系副 C／回魔輔助 ｜ 精進之矛、寶石手套、納什之牙</div>
+      </article>
+
+      <article class="champ-card cost-border-5" data-cost="5">
+        <div class="champ-header">
+          <h2 class="champ-name">塔里克</h2>
+          <span class="cost-pill c5">5 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">翡翠化身</span><span class="tag">先鋒戰士</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">翡翠光輝</span>
+            <span class="skill-mana">主動 0/65</span>
+          </div>
+          <p class="skill-desc">被動：塔里克或搭檔首次低於 50% 生命時，3 格內友軍獲得 305 / 480 / 11300 護盾。主動：回復 200 / 300 / 3000 生命，並使自身與搭檔接下來 2 次普攻造成 100 / 150 / 1000 額外魔傷。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>五費主坦 ｜ 石像鬼磐核、好戰者鎧甲、皇冠守衛</div>
+      </article>
+
+      <article class="champ-card cost-border-5" data-cost="5">
+        <div class="champ-header">
+          <h2 class="champ-name">茂凱</h2>
+          <span class="cost-pill c5">5 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">原始林</span><span class="tag">重裝戰士</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">播下種子</span>
+            <span class="skill-mana">主動 40/100</span>
+          </div>
+          <p class="skill-desc">3 格內敵軍陣亡永久 +30 最大生命。被動：每格擋 650 / 300 / 200 傷害跳出樹精造成 77 / 77 / 825 魔傷；陣亡跳出 3 / 5 / 10 棵樹苗。主動：造成 66 / 66 / 1100 魔傷並回復 330 / 400 / 2000 + 已損失生命。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>五費主坦 ｜ 振奮盔甲、好戰者鎧甲、石像鬼磐核</div>
+      </article>
+
+      <article class="champ-card cost-border-5" data-cost="5">
+        <div class="champ-header">
+          <h2 class="champ-name">艾希</h2>
+          <span class="cost-pill c5">5 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">盛放繁花</span><span class="tag">獵手</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">靈魂裂痕</span>
+            <span class="skill-mana">主動 20/80</span>
+          </div>
+          <p class="skill-desc">朝最多敵軍直線射出箭矢造成 440 / 660 / 1000 物傷，並留下持續 4 秒軌跡，每秒造成 7 / 11 / 220 + 2% / 3% / 10% 最大生命物理傷害與 20% 緩速。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>五費物理副 C ｜ 最後耳語、精進之矛、紅Buff</div>
+      </article>
+
+      <article class="champ-card cost-border-5" data-cost="5">
+        <div class="champ-header">
+          <h2 class="champ-name">吶兒</h2>
+          <span class="cost-pill c5">5 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">神木精靈</span><span class="tag">百戰老兵</span><span class="tag">武鬥家</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">狂怒基因</span>
+            <span class="skill-mana">主動 0/70</span>
+          </div>
+          <p class="skill-desc">變身為狂暴吶兒跳入敵陣，造成 100 / 150 / 2000 物傷、削弱雙防並暈眩 1 秒，獲得 400 / 600 / 10000 生命；後續施放「抓抓丟丟」將目標拋向最遠敵軍造成 380 / 570 / 9000 物傷。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>控制鬥士 ｜ 嗜血者、泰坦的決意、好戰者鎧甲</div>
+      </article>
+
+      <article class="champ-card cost-border-5" data-cost="5">
+        <div class="champ-header">
+          <h2 class="champ-name">凱能</h2>
+          <span class="cost-pill c5">5 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">地獄火使者</span><span class="tag">處刑者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">火焰風暴</span>
+            <span class="skill-mana">主動 0/40</span>
+          </div>
+          <p class="skill-desc">場上每有 1 位燃燒敵軍增加 15% 魔攻，獲得 250 / 350 / 3000 護盾後衝向敵群造成 80 / 120 / 1500 魔傷，並釋放 2 格火焰風暴造成總計 450 / 675 / 5000 魔法傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>法系進場收割 ｜ 離子星火、皇冠守衛、寶石手套</div>
+      </article>
+
+      <article class="champ-card cost-border-5" data-cost="5">
+        <div class="champ-header">
+          <h2 class="champ-name">埃爾文</h2>
+          <span class="cost-pill c5">5 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">綠林</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">守護種子</span>
+            <span class="skill-mana">主動 50/80</span>
+          </div>
+          <p class="skill-desc">賦予 2 名友軍護盾與 10% / 15% / 100% 傷害增幅，對相鄰敵軍造成 140 / 210 / 2000 魔傷；累計 5 顆種子可栽種增益棋格（蘑菇格加傷加血、岩石格加雙防）。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>功能輔助 ｜ 適性神盔、精進之矛、救贖/功能裝</div>
+      </article>
+
+      <!-- ===== 4 費英雄 ===== -->
+      <article class="champ-card cost-border-4" data-cost="4">
+        <div class="champ-header">
+          <h2 class="champ-name">伊澤瑞爾</h2>
+          <span class="cost-pill c4">4 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">神木精靈</span><span class="tag">處刑者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">森林亂舞</span>
+            <span class="skill-mana">主動 0/30</span>
+          </div>
+          <p class="skill-desc">瞬移拉開距離並造成 235 / 355 / 1200 物傷，獲得 25% 攻速；每施放 4 次技能消耗加成發射大範圍衝擊波，造成 385 / 580 / 2500 物理傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>4費物理主 C ｜ 精進之矛、無盡之刃、最後耳語</div>
+      </article>
+
+      <article class="champ-card cost-border-4" data-cost="4">
+        <div class="champ-header">
+          <h2 class="champ-name">亞菲利歐</h2>
+          <span class="cost-pill c4">4 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">月華之光</span><span class="tag">速射</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">月光狂襲</span>
+            <span class="skill-mana">主動 20/70</span>
+          </div>
+          <p class="skill-desc">2 秒內揮擊目標 5 次，每次造成 70 / 105 / 850 物傷，結束後發出衝擊波造成 490 / 735 / 5225 物理傷害由 2 格內敵軍分攤。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>4費攻速主 C ｜ 鬼索的狂暴之刃、無盡之刃、打手連枷</div>
+      </article>
+
+      <article class="champ-card cost-border-4" data-cost="4">
+        <div class="champ-header">
+          <h2 class="champ-name">阿璃</h2>
+          <span class="cost-pill c4">4 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">盛放繁花</span><span class="tag">術士</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">靈魂炸彈</span>
+            <span class="skill-mana">主動 20/100</span>
+          </div>
+          <p class="skill-desc">向 4 格範圍內敵軍最密集處發射靈魂炸彈，對 3 格範圍內敵軍造成 485 / 735 / 3500 魔法傷害（每遠離中心 1 格傷害遞減 20%）。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>4費法系主 C ｜ 藍Buff、寶石手套、虛空之杖</div>
+      </article>
+
+      <article class="champ-card cost-border-4" data-cost="4">
+        <div class="champ-header">
+          <h2 class="champ-name">賽特</h2>
+          <span class="cost-pill c4">4 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">盛放繁花</span><span class="tag">武鬥家</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">獸魂轟拳</span>
+            <span class="skill-mana">主動 60/135</span>
+          </div>
+          <p class="skill-desc">被動：首次低於 40% 最大生命時獲得 100 魔力。主動：迅速回復 369 / 419 / 2144 生命，並對大扇形範圍造成 222 / 297 / 5072 物理傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>4費前排主坦 ｜ 振奮盔甲、好戰者鎧甲、離子星火</div>
+      </article>
+
+      <article class="champ-card cost-border-4" data-cost="4">
+        <div class="champ-header">
+          <h2 class="champ-name">守望者</h2>
+          <span class="cost-pill c4">4 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">峽谷巨獸</span><span class="tag">先鋒戰士</span><span class="tag">神諭者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">蒼藍衝擊波</span>
+            <span class="skill-mana">主動 60/150</span>
+          </div>
+          <p class="skill-desc">獲得 530 / 630 / 2130 護盾持續 4 秒，猛擊地面擊飛敵軍造成 100 / 150 / 3500 魔傷與魔力掠奪；藍色增益使友軍獲得 2 回魔。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>4費控制主坦 ｜ 石像鬼磐核、振奮盔甲、保衛者之誓</div>
+      </article>
+
+      <article class="champ-card cost-border-4" data-cost="4">
+        <div class="champ-header">
+          <h2 class="champ-name">樹精長老</h2>
+          <span class="cost-pill c4">4 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">峽谷巨獸</span><span class="tag">劫肆者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">猩紅狂怒</span>
+            <span class="skill-mana">主動 0/40</span>
+          </div>
+          <p class="skill-desc">被動：目標陣亡後躍向下個目標造成 170 / 255 / 600 物傷。主動：增加 80% / 280% / 400% 物攻持續 8 秒並無視 40% / 60% 物防；紅色增益普攻燃燒並回血。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>4費近戰收割 ｜ 嗜血者、泰坦的決意、夜色緣界</div>
+      </article>
+
+      <article class="champ-card cost-border-4" data-cost="4">
+        <div class="champ-header">
+          <h2 class="champ-name">奈德麗</h2>
+          <span class="cost-pill c4">4 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">野性</span><span class="tag">幻化者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">標槍投擲／美洲獅</span>
+            <span class="skill-mana">主動 0/40</span>
+          </div>
+          <p class="skill-desc">魔攻型態獲得 150% 攻速投擲標槍造成 170 / 255 / 2000 魔傷，第三擊狙擊最遠敵軍造成 320 / 480 / 3000 魔傷；物攻型態則變身近戰美洲獅刺客。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>雙棲刺客/狙擊 ｜ 寶石手套＋精進之矛 / 泰坦＋嗜血者</div>
+      </article>
+
+      <article class="champ-card cost-border-4" data-cost="4">
+        <div class="champ-header">
+          <h2 class="champ-name">希維爾</h2>
+          <span class="cost-pill c4">4 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">野性</span><span class="tag">獵手</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">迴旋之刃</span>
+            <span class="skill-mana">主動 0/40</span>
+          </div>
+          <p class="skill-desc">擲出十字刃造成 205 / 305 / 1150 物傷並在鄰近敵軍間彈跳 8 次（每次 41 / 61 / 460 物傷），擊殺敵軍時額外彈跳 3 / 6 / 10 次。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>4費群體物理 ｜ 無盡之刃、最後耳語、精進之矛</div>
+      </article>
+
+      <article class="champ-card cost-border-4" data-cost="4">
+        <div class="champ-header">
+          <h2 class="champ-name">莉莉亞</h2>
+          <span class="cost-pill c4">4 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">妖精</span><span class="tag">捍衛者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">柔沉夢謠</span>
+            <span class="skill-mana">主動 40/140</span>
+          </div>
+          <p class="skill-desc">回復 300 / 400 / 800 生命並釋放 4 隻蝴蝶，造成 90 / 135 / 2000 魔傷並使敵軍沉睡 1.5 / 1.75 / 8 秒（受 1000 傷害喚醒並額外受 10% 最大生命魔傷）。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>4費控場坦 ｜ 保衛者之誓、皇冠守衛、適性神盔</div>
+      </article>
+
+      <article class="champ-card cost-border-4" data-cost="4">
+        <div class="champ-header">
+          <h2 class="champ-name">魔甘娜</h2>
+          <span class="cost-pill c4">4 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">女巫</span><span class="tag">神諭者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">枯萎詛咒</span>
+            <span class="skill-mana">主動 0/60</span>
+          </div>
+          <p class="skill-desc">被動：獲得 25% 全能吸血。主動：對 3 名敵軍造成 60 / 90 / 500 魔傷並下靈咒 4 秒，生成 2 格枯萎領域每秒造成 33 / 50 / 500 魔法傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>4費重創輔助 ｜ 黑魔禁書、虛空之杖、精進之矛</div>
+      </article>
+
+      <article class="champ-card cost-border-4" data-cost="4">
+        <div class="champ-header">
+          <h2 class="champ-name">枷蘿</h2>
+          <span class="cost-pill c4">4 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">荊棘少女</span><span class="tag">喚物大師</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">狂暴蔓延</span>
+            <span class="skill-mana">主動 0/45</span>
+          </div>
+          <p class="skill-desc">在戰場召喚 2 / 4 株植物，普攻最靠近敵軍 10 次（每次 37 / 55 / 225 魔傷）；植物存活 6 株以上時全隊獲得 10% 續戰力。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>4費召喚輔助 ｜ 黑魔禁書、精進之矛、納什之牙</div>
+      </article>
+
+      <article class="champ-card cost-border-4" data-cost="4">
+        <div class="champ-header">
+          <h2 class="champ-name">索拉卡</h2>
+          <span class="cost-pill c4">4 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">絕命花華</span><span class="tag">處刑者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">殞星召喚</span>
+            <span class="skill-mana">主動 0/30</span>
+          </div>
+          <p class="skill-desc">召喚殞星墜落於當前目標造成 190 / 285 / 1000 魔傷；若目標先前已被擊中，額外召喚 3 顆殞星各造成 100 / 150 / 1000 魔法傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>4費單體法核 ｜ 藍Buff、寶石手套、科技槍刃</div>
+      </article>
+
+      <article class="champ-card cost-border-4" data-cost="4">
+        <div class="champ-header">
+          <h2 class="champ-name">阿姆姆</h2>
+          <span class="cost-pill c4">4 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">地獄火使者</span><span class="tag">重裝戰士</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">怒不可遏</span>
+            <span class="skill-mana">主動 30/140</span>
+          </div>
+          <p class="skill-desc">被動：每秒回血並對 1 格敵軍造成 12 / 18 / 150 魔傷。主動：對 2 格敵軍造成 100 / 150 / 2000 魔傷並暈眩 1 秒（若敵軍燃燒則延長至 2.5 秒）。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>4費群控主坦 ｜ 日炎斗篷、離子星火、好戰者鎧甲</div>
+      </article>
+
+      <article class="champ-card cost-border-4" data-cost="4">
+        <div class="champ-header">
+          <h2 class="champ-name">墨菲特</h2>
+          <span class="cost-pill c4">4 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">黑荊棘</span><span class="tag">巨岩壁壘</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">石化樹皮</span>
+            <span class="skill-mana">主動 30/80</span>
+          </div>
+          <p class="skill-desc">每有一位敵軍鎖定墨菲特增加 10 雙防。主動：獲得 700 / 850 / 2000 護盾持續 4 秒，護盾破裂時釋放黑暗能量波對 2 格敵軍造成 82 / 123 / 3399 魔法傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>4費單頂坦克 ｜ 石像鬼磐核、刺藤胸甲、好戰者鎧甲</div>
+      </article>
+
+      <!-- ===== 3 費英雄 ===== -->
+      <article class="champ-card cost-border-3" data-cost="3">
+        <div class="champ-header">
+          <h2 class="champ-name">易大師</h2>
+          <span class="cost-pill c3">3 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">盛放繁花</span><span class="tag">幻化者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">無極劍道</span>
+            <span class="skill-mana">主動 0/3</span>
+          </div>
+          <p class="skill-desc">被動：每第三次普攻為雙重打擊，參與擊殺獲得跑速。幻化者物攻型態每次雙重打擊疊加 15% 攻速；魔攻型態造成額外傷害並回血。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>3費賭狗主 C ｜ 鬼索的狂暴之刃、泰坦的決意、水銀兜帽</div>
+      </article>
+
+      <article class="champ-card cost-border-3" data-cost="3">
+        <div class="champ-header">
+          <h2 class="champ-name">崔絲塔娜</h2>
+          <span class="cost-pill c3">3 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">妖精</span><span class="tag">百戰老兵</span><span class="tag">獵手</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">爆炸射擊</span>
+            <span class="skill-mana">主動 0/60</span>
+          </div>
+          <p class="skill-desc">附著爆炸射擊 4 秒並獲得無限射程與 60% 攻速，結束後引爆分攤 160 / 240 / 385 物傷給 2 格敵軍；目標陣亡時炸彈會轉移至新目標。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>3費物理輸出 ｜ 無盡之刃、最後耳語、鬼索的狂暴之刃</div>
+      </article>
+
+      <article class="champ-card cost-border-3" data-cost="3">
+        <div class="champ-header">
+          <h2 class="champ-name">拉姆斯</h2>
+          <span class="cost-pill c3">3 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">百戰老兵</span><span class="tag">捍衛者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">尖刺防禦</span>
+            <span class="skill-mana">主動 30/80</span>
+          </div>
+          <p class="skill-desc">嘲諷敵軍攻擊自身，在 4 秒內獲得 350 / 450 / 550 護盾與 60 雙防；護盾破裂時對 2 格內敵軍造成 50 / 75 / 120 物理傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>3費賭狗主坦 ｜ 石像鬼磐核、振奮盔甲、龍之爪</div>
+      </article>
+
+      <article class="champ-card cost-border-3" data-cost="3">
+        <div class="champ-header">
+          <h2 class="champ-name">赫克林</h2>
+          <span class="cost-pill c3">3 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">神木精靈</span><span class="tag">先鋒戰士</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">靈魂恐懼</span>
+            <span class="skill-mana">主動 30/110</span>
+          </div>
+          <p class="skill-desc">增加 50 雙防持續 3 秒並回復 375 / 475 / 685 生命，派出幽魂騎士攻擊最近 3 名敵軍造成 80 / 120 / 195 魔傷並暈眩 1.5 / 1.75 / 3 秒。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>3費控場前排 ｜ 石像鬼磐核、均等法衣、好戰者鎧甲</div>
+      </article>
+
+      <article class="champ-card cost-border-3" data-cost="3">
+        <div class="champ-header">
+          <h2 class="champ-name">菲艾</h2>
+          <span class="cost-pill c3">3 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">野性</span><span class="tag">重裝戰士</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">憤怒雙拳</span>
+            <span class="skill-mana">主動 0/60</span>
+          </div>
+          <p class="skill-desc">被動：普攻回復 22 生命。主動：回復 225 / 300 / 400 生命，並獲得 85% / 100% / 125% 攻速、15% 續戰力與無人能擋 3 秒。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>3費前排鬥士 ｜ 振奮盔甲、好戰者鎧甲、均等法衣</div>
+      </article>
+
+      <article class="champ-card cost-border-3" data-cost="3">
+        <div class="champ-header">
+          <h2 class="champ-name">費德提克</h2>
+          <span class="cost-pill c3">3 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">絕命花華</span><span class="tag">捍衛者</span><span class="tag">術士</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">收割</span>
+            <span class="skill-mana">主動 30/90</span>
+          </div>
+          <p class="skill-desc">降低最近 3 名敵軍 10 魔防，並在 2 秒內汲取生命回復 395 / 470 / 790 生命，同時對每個目標造成 70 / 105 / 170 魔法傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>3費羈絆拼圖 ｜ 離子星火、皇冠守衛、黑魔禁書</div>
+      </article>
+
+      <article class="champ-card cost-border-3" data-cost="3">
+        <div class="champ-header">
+          <h2 class="champ-name">黛安娜</h2>
+          <span class="cost-pill c3">3 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">月華之光</span><span class="tag">劫肆者</span><span class="tag">先鋒戰士</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">蒼白屏障</span>
+            <span class="skill-mana">主動 0/40</span>
+          </div>
+          <p class="skill-desc">獲得 150 / 225 / 300 護盾持續 2 秒，並向 2 格範圍內敵軍發射 6 顆月光法球，每顆造成 65 / 100 / 155 魔法傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>3費月華副坦 ｜ 離子星火、泰坦的決意、嗜血者</div>
+      </article>
+
+      <article class="champ-card cost-border-3" data-cost="3">
+        <div class="champ-header">
+          <h2 class="champ-name">阿祈爾</h2>
+          <span class="cost-pill c3">3 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">黑荊棘</span><span class="tag">處刑者</span><span class="tag">喚物大師</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">起來吧！</span>
+            <span class="skill-mana">主動 0/35</span>
+          </div>
+          <p class="skill-desc">增加 150% 攻速並於接下來 6 次普攻召喚 2 名沙兵進行攻擊，每次造成 46 / 69 / 110 魔法傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>3費攻速法核 ｜ 鬼索的狂暴之刃、精進之矛、納什之牙</div>
+      </article>
+
+      <article class="champ-card cost-border-3" data-cost="3">
+        <div class="champ-header">
+          <h2 class="champ-name">巨喙鳥媽媽</h2>
+          <span class="cost-pill c3">3 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">峽谷巨獸</span><span class="tag">喚物大師</span><span class="tag">速射</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">飛禽家族</span>
+            <span class="skill-mana">主動 20/60</span>
+          </div>
+          <p class="skill-desc">召喚 4 隻無法被指定的小巨喙鳥持續 5 秒協同攻擊同一目標（每下 27 / 41 / 65 物傷）；橘色增益每次物傷降低敵軍 2 物防。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>3費破甲射手 ｜ 鬼索的狂暴之刃、無盡之刃、紅Buff</div>
+      </article>
+
+      <article class="champ-card cost-border-3" data-cost="3">
+        <div class="champ-header">
+          <h2 class="champ-name">石怪</h2>
+          <span class="cost-pill c3">3 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">峽谷巨獸</span><span class="tag">武鬥家</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">撼地之石</span>
+            <span class="skill-mana">主動 80/135</span>
+          </div>
+          <p class="skill-desc">被動：死亡時分裂為兩隻小石怪並嘲諷敵軍；石灰色增益陣亡時為友軍提供 8% 最大生命護盾。主動：增加 175 / 225 / 325 生命並滾向目標造成 223 / 288 / 423 傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>3費分裂坦克 ｜ 日炎斗篷、好戰者鎧甲、石像鬼磐核</div>
+      </article>
+
+      <article class="champ-card cost-border-3" data-cost="3">
+        <div class="champ-header">
+          <h2 class="champ-name">寇格魔</h2>
+          <span class="cost-pill c3">3 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">腐蝕</span><span class="tag">幻化者</span><span class="tag">神諭者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">槍林砲雨</span>
+            <span class="skill-mana">主動 15/55</span>
+          </div>
+          <p class="skill-desc">腐蝕效果使敵軍雙防降低 30%。吐出酸液對兩名敵軍造成 165 / 250 / 425 物傷（半血以下提升至 231 / 350 / 595）或魔攻持續傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>3費破雙防工具人 ｜ 精進之矛、黑魔禁書、紅Buff</div>
+      </article>
+
+      <article class="champ-card cost-border-3" data-cost="3">
+        <div class="champ-header">
+          <h2 class="champ-name">卡莎碧雅</h2>
+          <span class="cost-pill c3">3 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">女巫</span><span class="tag">術士</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">毒霧爆擊</span>
+            <span class="skill-mana">主動 0/30</span>
+          </div>
+          <p class="skill-desc">對目標及最近未中毒敵軍下毒，在 15 秒內造成 425 / 640 / 1020 魔法傷害，中毒效果可無限累加。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>3費持續法傷 ｜ 藍Buff、黑魔禁書、虛空之杖</div>
+      </article>
+
+      <article class="champ-card cost-border-3" data-cost="3">
+        <div class="champ-header">
+          <h2 class="champ-name">雷葛爾</h2>
+          <span class="cost-pill c3">3 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">仇敵</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">兇殘打擊</span>
+            <span class="skill-mana">主動 10/50</span>
+          </div>
+          <p class="skill-desc">每參與擊殺 8 次賦予金錢，滿 30 次為全隊加物攻。跳向 3 格內血量比例最低敵軍造成 255 / 385 / 615 物傷並回復 70～220 生命。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>3費切後刺客 ｜ 夜色緣界、嗜血者、無盡之刃</div>
+      </article>
+
+      <article class="champ-card cost-border-3" data-cost="3">
+        <div class="champ-header">
+          <h2 class="champ-name">卡力斯</h2>
+          <span class="cost-pill c3">3 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">仇敵</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">孤獨的恐懼</span>
+            <span class="skill-mana">主動 0/25</span>
+          </div>
+          <p class="skill-desc">參與擊殺可進化永久獲得處刑者、速射、劫肆者或術士特性。躍向 2.7 格內最遠敵軍造成 260 / 370 / 550 魔傷（孤立目標提升至 310 / 445 / 660 並回 10 魔）。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>3費進化刺客 ｜ 藍Buff、寶石手套、夜色緣界</div>
+      </article>
+
+      <!-- ===== 2 費英雄 ===== -->
+      <article class="champ-card cost-border-2" data-cost="2">
+        <div class="champ-header">
+          <h2 class="champ-name">尤娜拉</h2>
+          <span class="cost-pill c2">2 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">盛放繁花</span><span class="tag">處刑者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">靈心修真</span>
+            <span class="skill-mana">主動 0/35</span>
+          </div>
+          <p class="skill-desc">向前衝刺發射念珠造成 165 / 245 / 375 物傷，隨後念珠分裂對 2 名鄰近敵軍造成 58 / 86 / 131 物理傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>2費賭狗主 C ｜ 精進之矛、最後耳語、巨人殺手</div>
+      </article>
+
+      <article class="champ-card cost-border-2" data-cost="2">
+        <div class="champ-header">
+          <h2 class="champ-name">提摩</h2>
+          <span class="cost-pill c2">2 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">百戰老兵</span><span class="tag">神諭者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">真菌狼人殺</span>
+            <span class="skill-mana">主動 0/50</span>
+          </div>
+          <p class="skill-desc">投擲 2 朵小蘑菇造成 60 / 90 / 135 魔傷，再投擲巨型蘑菇造成 135 / 200 / 310 魔傷；每次施放有機率採集紅（重抽）、綠（生命）、黃（經驗）蘑菇。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>2費賭狗主 C ｜ 精進之矛、黑魔禁書、寶石手套</div>
+      </article>
+
+      <article class="champ-card cost-border-2" data-cost="2">
+        <div class="champ-header">
+          <h2 class="champ-name">史瓦妮</h2>
+          <span class="cost-pill c2">2 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">日輝之光</span><span class="tag">重裝戰士</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">太陽之怒</span>
+            <span class="skill-mana">主動 40/100</span>
+          </div>
+          <p class="skill-desc">獲得 315 / 340 / 365 護盾持續 4 秒，接著以扇形劈砍造成 90 / 135 / 205 魔傷，再施展直線斬擊造成 120 / 180 / 270 魔法傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>2費賭狗主坦 ｜ 石像鬼磐核、好戰者鎧甲、日炎斗篷</div>
+      </article>
+
+      <article class="champ-card cost-border-2" data-cost="2">
+        <div class="champ-header">
+          <h2 class="champ-name">凱爾</h2>
+          <span class="cost-pill c2">2 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">日輝之光</span><span class="tag">速射</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">日輝審判</span>
+            <span class="skill-mana">被動</span>
+          </div>
+          <p class="skill-desc">依星等逐步飛昇：一飛昇普攻附帶 56 / 84 / 98 魔傷；二飛昇普攻附帶 20% 魔防削抗；三飛昇發射穿透波動；四飛昇獲得無限攻擊距離。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>2費攻速副 C ｜ 鬼索的狂暴之刃、科技槍刃、紅Buff</div>
+      </article>
+
+      <article class="champ-card cost-border-2" data-cost="2">
+        <div class="champ-header">
+          <h2 class="champ-name">勒布朗</h2>
+          <span class="cost-pill c2">2 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">神木精靈</span><span class="tag">術士</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">鏡像</span>
+            <span class="skill-mana">主動 0/40</span>
+          </div>
+          <p class="skill-desc">被動：戰鬥後有 10% / 15% / 40% 機率生成場上友軍複製體。主動：造成 250 / 375 / 565 魔傷與相鄰濺射 85 / 130 / 190 魔法傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>2費過渡打工／賭狗輔助 ｜ 藍Buff、黑魔禁書</div>
+      </article>
+
+      <article class="champ-card cost-border-2" data-cost="2">
+        <div class="champ-header">
+          <h2 class="champ-name">亞歷斯塔</h2>
+          <span class="cost-pill c2">2 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">神木精靈</span><span class="tag">武鬥家</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">勝利怒吼</span>
+            <span class="skill-mana">主動 30/90</span>
+          </div>
+          <p class="skill-desc">回復自身 276 / 336 / 396 生命與兩名友軍 80 / 105 / 130 生命，猛擊目標造成 100 / 150 / 225 魔傷並暈眩 1.5 秒。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>2費治療控場坦 ｜ 好戰者鎧甲、日炎斗篷</div>
+      </article>
+
+      <article class="champ-card cost-border-2" data-cost="2">
+        <div class="champ-header">
+          <h2 class="champ-name">慎</h2>
+          <span class="cost-pill c2">2 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">地獄火使者</span><span class="tag">捍衛者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">凝氣盾</span>
+            <span class="skill-mana">主動 30/90</span>
+          </div>
+          <p class="skill-desc">賦予自身 325 / 400 / 500 護盾及鄰近受傷友軍 200 / 275 / 375 護盾，兩者接下來 3 次普攻獲得 40% 攻速並附加 35 / 55 / 80 額外魔傷。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>2費護盾坦 ｜ 日炎斗篷、離子星火、堅定之心</div>
+      </article>
+
+      <article class="champ-card cost-border-2" data-cost="2">
+        <div class="champ-header">
+          <h2 class="champ-name">魔狼</h2>
+          <span class="cost-pill c2">2 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">峽谷巨獸</span><span class="tag">劫肆者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">撕扯之爪</span>
+            <span class="skill-mana">主動 0/40</span>
+          </div>
+          <p class="skill-desc">躍向 3 格內血量最低敵軍造成 500 / 1050 / 2250 物傷，接下來 2 次普攻增加 175% 攻速並附加 60 / 90 / 135 額外物傷；灰色增益提供技能暴擊。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>2費過渡刺客 ｜ 無盡之刃、嗜血者、夜色緣界</div>
+      </article>
+
+      <article class="champ-card cost-border-2" data-cost="2">
+        <div class="champ-header">
+          <h2 class="champ-name">河蟹</h2>
+          <span class="cost-pill c2">2 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">峽谷巨獸</span><span class="tag">重裝戰士</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">你挖得動嗎？</span>
+            <span class="skill-mana">主動 40/100</span>
+          </div>
+          <p class="skill-desc">被動：跳舞取代普攻對相鄰敵軍造成 50 / 75 / 112.5 物傷。主動：鑽入地底增加 15% 續戰力持續 3 秒並回復 325 / 400 / 675 生命。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>2費前排坦克 ｜ 好戰者鎧甲、振奮盔甲</div>
+      </article>
+
+      <article class="champ-card cost-border-2" data-cost="2">
+        <div class="champ-header">
+          <h2 class="champ-name">啾吉</h2>
+          <span class="cost-pill c2">2 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">峽谷巨獸</span><span class="tag">幻化者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">飽嗝泡泡</span>
+            <span class="skill-mana">主動 0/45</span>
+          </div>
+          <p class="skill-desc">吐出劇毒氣泡命中第一位敵軍爆炸造成 225 / 340 / 535 魔傷，3 秒內對 1 格範圍造成 145 / 220 / 345 魔傷與大幅緩速；紫色增益每 5 秒 +30% 魔攻。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>2費前期法傷 ｜ 精進之矛、黑魔禁書</div>
+      </article>
+
+      <article class="champ-card cost-border-2" data-cost="2">
+        <div class="champ-header">
+          <h2 class="champ-name">凱特琳</h2>
+          <span class="cost-pill c2">2 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">女巫</span><span class="tag">獵手</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">爆頭</span>
+            <span class="skill-mana">被動 0/3</span>
+          </div>
+          <p class="skill-desc">每第 3 次普攻強化為精準爆頭，對目標造成 220 / 330 / 545 物理傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>2費物理打工 ｜ 無盡之刃、鬼索的狂暴之刃</div>
+      </article>
+
+      <article class="champ-card cost-border-2" data-cost="2">
+        <div class="champ-header">
+          <h2 class="champ-name">伊莉絲</h2>
+          <span class="cost-pill c2">2 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">女巫</span><span class="tag">先鋒戰士</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">蜘蛛女王</span>
+            <span class="skill-mana">主動 20/70</span>
+          </div>
+          <p class="skill-desc">變身蜘蛛獲得 375 / 475 / 725 最大生命，普攻附加 35 / 50 / 80 魔傷並回復 55 / 90 / 170 生命；後續施放獲得 175% 衰減攻速。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>2費吸血坦 ｜ 振奮盔甲、泰坦的決意</div>
+      </article>
+
+      <article class="champ-card cost-border-2" data-cost="2">
+        <div class="champ-header">
+          <h2 class="champ-name">沃維克</h2>
+          <span class="cost-pill c2">2 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">黑荊棘</span><span class="tag">劫肆者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">猛獸狂顎</span>
+            <span class="skill-mana">主動 0/40</span>
+          </div>
+          <p class="skill-desc">嚙咬當前目標造成 200 / 300 / 450 物傷，回復相當於 20% 傷害量的生命並永久增加 20% 攻速直到戰鬥結束。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>2費前期鬥士 ｜ 嗜血者、泰坦的決意</div>
+      </article>
+
+      <!-- ===== 1 費英雄 ===== -->
+      <article class="champ-card cost-border-1" data-cost="1">
+        <div class="champ-header">
+          <h2 class="champ-name">維迦</h2>
+          <span class="cost-pill c1">1 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">黑荊棘</span><span class="tag">百戰老兵</span><span class="tag">術士</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">能量爆裂</span>
+            <span class="skill-mana">主動 0/30</span>
+          </div>
+          <p class="skill-desc">發射能量波造成 175 / 265 / 395 魔傷（目標低於 30% 生命提升至 265 / 400 / 595）；若擊殺目標則永久獲得 1.5% 魔攻。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>1費成長法核 ｜ 藍Buff、海克斯科技槍刃、寶石手套</div>
+      </article>
+
+      <article class="champ-card cost-border-1" data-cost="1">
+        <div class="champ-header">
+          <h2 class="champ-name">鄂爾</h2>
+          <span class="cost-pill c1">1 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">神木精靈</span><span class="tag">捍衛者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">熾焰吹息</span>
+            <span class="skill-mana">主動 40/100</span>
+          </div>
+          <p class="skill-desc">獲得 400 / 460 / 550 護盾並造成 200 / 300 / 450 扇形魔傷；每場將格擋傷害儲存為鍛爐能量（三星加倍），集滿贈送 1 個神器鐵砧。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>1費打鐵神坦 ｜ 石像鬼磐核、好戰者鎧甲</div>
+      </article>
+
+      <article class="champ-card cost-border-1" data-cost="1">
+        <div class="champ-header">
+          <h2 class="champ-name">雷歐娜</h2>
+          <span class="cost-pill c1">1 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">日輝之光</span><span class="tag">捍衛者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">盾擊</span>
+            <span class="skill-mana">主動 40/100</span>
+          </div>
+          <p class="skill-desc">被動：開場獲得 60 / 70 / 80 雙防並於 12 秒內衰減。主動：盾擊目標造成 60 / 108 / 162 魔傷並暈眩 1.5 秒。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>1費控場坦 ｜ 日炎斗篷、好戰者鎧甲</div>
+      </article>
+
+      <article class="champ-card cost-border-1" data-cost="1">
+        <div class="champ-header">
+          <h2 class="champ-name">約瑞科</h2>
+          <span class="cost-pill c1">1 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">盛放繁花</span><span class="tag">重裝戰士</span><span class="tag">喚物大師</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">臨終葬儀</span>
+            <span class="skill-mana">主動 50/110</span>
+          </div>
+          <p class="skill-desc">被動：死亡時生成擁有 330 / 530 / 880 生命的神靈行者並立即嘲諷敵軍。主動：回復 280 / 325 / 435 生命並造成 150 / 225 / 340 物傷。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>1費三羈絆前排 ｜ 輔助裝、日炎斗篷</div>
+      </article>
+
+      <article class="champ-card cost-border-1" data-cost="1">
+        <div class="champ-header">
+          <h2 class="champ-name">卡瑪</h2>
+          <span class="cost-pill c1">1 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">盛放繁花</span><span class="tag">術士</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">卡瑪羈絆</span>
+            <span class="skill-mana">主動 0/40</span>
+          </div>
+          <p class="skill-desc">連結目標在 1.5 秒內造成 280 / 420 / 630 魔傷，隨後爆發能量對 1 格敵軍造成 120 / 180 / 270 魔傷與 30% 緩速。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>1費法系打工 ｜ 藍Buff、精進之矛、黑魔禁書</div>
+      </article>
+
+      <article class="champ-card cost-border-1" data-cost="1">
+        <div class="champ-header">
+          <h2 class="champ-name">剎雅</h2>
+          <span class="cost-pill c1">1 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">神木精靈</span><span class="tag">妖精</span><span class="tag">速射</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">奪命疾翼</span>
+            <span class="skill-mana">主動 0/50</span>
+          </div>
+          <p class="skill-desc">接下來 5 次普攻獲得 50% 攻速並化作羽毛，造成 72 / 108 / 165 物傷同時降低目標 2 點物理防禦。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>1費物理打工 ｜ 鬼索的狂暴之刃、最後耳語</div>
+      </article>
+
+      <article class="champ-card cost-border-1" data-cost="1">
+        <div class="champ-header">
+          <h2 class="champ-name">銳空</h2>
+          <span class="cost-pill c1">1 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">妖精</span><span class="tag">重裝戰士</span><span class="tag">先鋒戰士</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">迷人舞踏</span>
+            <span class="skill-mana">主動 35/105</span>
+          </div>
+          <p class="skill-desc">獲得 270 / 320 / 415 護盾持續 4 秒，並賦予我方傷害最高的友軍 190% / 200% / 230% 衰減攻速。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>1費雙坦羈絆輔助 ｜ 好戰者鎧甲、日炎斗篷</div>
+      </article>
+
+      <article class="champ-card cost-border-1" data-cost="1">
+        <div class="champ-header">
+          <h2 class="champ-name">柯布柯</h2>
+          <span class="cost-pill c1">1 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">百戰老兵</span><span class="tag">武鬥家</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">生命之舞</span>
+            <span class="skill-mana">主動 30/90</span>
+          </div>
+          <p class="skill-desc">在 2 秒內回復 314 / 364 / 509 生命，下一次普攻替換為重擊造成 140 / 175 / 220 魔法傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>1費回血前排 ｜ 振奮盔甲、好戰者鎧甲</div>
+      </article>
+
+      <article class="champ-card cost-border-1" data-cost="1">
+        <div class="champ-header">
+          <h2 class="champ-name">樹精</h2>
+          <span class="cost-pill c1">1 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">峽谷巨獸</span><span class="tag">獵手</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">飛葉快刀</span>
+            <span class="skill-mana">主動 0/50</span>
+          </div>
+          <p class="skill-desc">召喚五片葉片匯聚目標造成 370 / 555 / 835 物傷，附加 20% 重創與 1% 燃燒；緋紅增益每次施放加 22% 物攻。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>1費物理打工 ｜ 無盡之刃、紅Buff</div>
+      </article>
+
+      <article class="champ-card cost-border-1" data-cost="1">
+        <div class="champ-header">
+          <h2 class="champ-name">小石子</h2>
+          <span class="cost-pill c1">1 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">峽谷巨獸</span><span class="tag">神諭者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">蒼藍雷射</span>
+            <span class="skill-mana">主動 25/65</span>
+          </div>
+          <p class="skill-desc">朝目標發射持續光束，每秒造成 160 / 240 / 360 魔傷並降低目標 3 魔防；深藍綠色增益每照射 4 秒獲得 2 回魔。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>1費削抗法師 ｜ 藍Buff、黑魔禁書</div>
+      </article>
+
+      <article class="champ-card cost-border-1" data-cost="1">
+        <div class="champ-header">
+          <h2 class="champ-name">法洛士</h2>
+          <span class="cost-pill c1">1 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">地獄火使者</span><span class="tag">速射</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">破甲箭</span>
+            <span class="skill-mana">主動 30/120</span>
+          </div>
+          <p class="skill-desc">蓄力後朝最多敵軍直線射出穿透箭矢，對命中敵軍造成 415 / 625 / 995 物理傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>1費物理打工 ｜ 鬼索的狂暴之刃、最後耳語</div>
+      </article>
+
+      <article class="champ-card cost-border-1" data-cost="1">
+        <div class="champ-header">
+          <h2 class="champ-name">阿卡莉</h2>
+          <span class="cost-pill c1">1 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">地獄火使者</span><span class="tag">幻化者</span><span class="tag">劫肆者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">苦無攻擊</span>
+            <span class="skill-mana">主動 0/30</span>
+          </div>
+          <p class="skill-desc">向目標投擲苦無造成 155 / 235 / 370 物傷（目標燃燒時額外加傷）；幻化者若造成擊殺會立即再施放一次。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>1費前期刺客 ｜ 正義手套、夜色緣界</div>
+      </article>
+
+      <article class="champ-card cost-border-1" data-cost="1">
+        <div class="champ-header">
+          <h2 class="champ-name">卡蜜兒</h2>
+          <span class="cost-pill c1">1 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">女巫</span><span class="tag">劫肆者</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">刀光護體</span>
+            <span class="skill-mana">主動 0/25</span>
+          </div>
+          <p class="skill-desc">斬擊目標造成 170 / 255 / 435 物理傷害，並獲得 60 / 90 / 200 護盾持續 2 秒。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>1費前期戰士 ｜ 嗜血者、泰坦的決意</div>
+      </article>
+
+      <article class="champ-card cost-border-1" data-cost="1">
+        <div class="champ-header">
+          <h2 class="champ-name">雷珂煞</h2>
+          <span class="cost-pill c1">1 費</span>
+        </div>
+        <div class="champ-traits">
+          <span class="tag">黑荊棘</span><span class="tag">武鬥家</span>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <span class="skill-name">連根拔起</span>
+            <span class="skill-mana">主動 40/100</span>
+          </div>
+          <p class="skill-desc">被動：每秒回復 17 / 21 / 27 生命（施放後三倍）。主動：從地底衝出暈眩相鄰敵軍 1 秒並造成 70 / 105 / 160 魔法傷害。</p>
+        </div>
+        <div class="champ-build"><strong>推薦定位與出裝：</strong>1費控場前排 ｜ 日炎斗篷、好戰者鎧甲</div>
+      </article>
+    </main>
+
+    <p id="champ-empty-state" class="empty-state is-hidden">找不到符合條件的英雄，請嘗試調整費用篩選或搜尋關鍵字。</p>
+  </div>
+
+  <footer class="site-footer">
+    聯盟戰棋（TFT）陣容與營運百科 — Set 18 Enchanted Wilds 全英雄圖鑑
+  </footer>
+</body>
+</html>
